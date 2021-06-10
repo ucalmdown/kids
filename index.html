@@ -5,6 +5,7 @@
 	<title>어린이</title>
 <style type="text/css">
 	@font-face {font-family: "나눔손글씨 또박또박";font-style: normal;font-weight: normal;src:url("나눔손글씨 또박또박.ttf");}
+
 	body{margin: 0px; display: block;}
 	header{width: 100%; margin: auto; }
 	section{width: 1000px;margin: auto; }
@@ -12,11 +13,9 @@
 	.toptop { overflow: hidden; width: 100%; margin: auto;}
 	.absolute {display: block; position: absolute;}
 	#navi1 {display: inline-block; width: 83px; height: 89px; padding-top: 110px; margin-left: 350px;}
-	#navi1:hover {background: url('img6.png') /**no-repeat**/; width: 83px; height: 89px;}
 	#navi2 {display: inline-block; width: 142px; padding-top: 110px; margin-left: 350px;}
-	#navi2:hover {background: url('img7.png'); width: 142px; padding-top: 110px;}
 	#navi3 {display: inline-block; width: 98px; padding-top: 110px; margin-left: 0px;}
-	#navi3:hover {background: url('img8.png'); width: 98px; padding-top: 110px;}
+	
 
 /**본문**/
 	#hate {margin-top: 450px;}
@@ -57,9 +56,9 @@
 
 <section>
 <div class="absolute">
-	<a><img id="navi3" src="img3.png"></a>
-	<a href=""><img id="navi2" src="img4.png"></a>
-	<a href=""><img id="navi1" src="img5.png"></a>
+	<a id="navi3"><img src="img3.png" onmouseover="this.src='img8.png'" onmouseout="this.src='img3.png'"></a>
+	<a id="navi2" href=""><img src="img4.png" onmouseover="this.src='img7.png'" onmouseout="this.src='img4.png'"></a>
+	<a id="navi1" href=""><img src="img5.png" onmouseover="this.src='img6.png'" onmouseout="this.src='img5.png'"></a>
 </div>
 </section>
 
