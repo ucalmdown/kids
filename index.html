@@ -6,16 +6,32 @@
 <style type="text/css">
 	@font-face {font-family: "나눔손글씨 또박또박";font-style: normal;font-weight: normal;src:url("나눔손글씨 또박또박.ttf");}
 
-	body{margin: 0px; display: block;}
+	body{margin: 0px; display: block;  font-family: "나눔손글씨 또박또박"; }
 	header{width: 100%; margin: auto; }
 	section{width: 1000px;margin: auto; }
+	.cursor_test {cursor: url('cursor.cur'), auto;}
 	.header {width:729px;padding-top: 180px;margin-left: 130px}
 	.toptop { overflow: hidden; width: 100%; margin: auto;}
 	.absolute {display: block; position: absolute;}
 	#navi1 {display: inline-block; width: 83px; height: 89px; padding-top: 110px; margin-left: 350px;}
 	#navi2 {display: inline-block; width: 142px; padding-top: 110px; margin-left: 350px;}
 	#navi3 {display: inline-block; width: 98px; padding-top: 110px; margin-left: 0px;}
-	
+	.naviimg1{}
+	.naviimg2{}
+	.naviimg3{}
+	.naviimg1:hover {width: 90px;}
+	.naviimg2:hover {width: 149px;}
+	.naviimg3:hover {width: 105px;}
+
+	::-webkit-scrollbar {
+  width: 10px;  /* 세로축 스크롤바 길이 */}
+  ::-webkit-scrollbar-track {
+  background-color: white;
+}
+  ::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-image:url('img26.png');}
+
 
 /**본문**/
 	#hate {margin-top: 450px;}
@@ -24,26 +40,28 @@
 	.memo1 {width: 500px; padding-top: 50px;padding-left: -10px;}
 	.memo2 {width: 480px; height: 330px; padding-top: 50px;padding-left: 50px;}
 	#br {line-height: 2em;}
-	.gmh {left:130px; top:-155px;font-family: "나눔손글씨 또박또박"; font-size: 4em; font-weight: 1000;letter-spacing: 4px;}
-	.gmt1 {width: 410px; left:55px; top:55px; font-family: "나눔손글씨 또박또박"; font-size:2em;}
-	.gmt2 {width: 400px; left:600px; top:40px; font-family: "나눔손글씨 또박또박"; font-size:2em;}
+	.gmh {left:130px; top:-155px; font-size: 4em; font-weight: 1000;letter-spacing: 4px;}
+	.gmt1 {width: 410px; left:55px; top:55px; font-size:2em;}
+	.gmt2 {width: 400px; left:600px; top:40px; font-size:2em;}
 
-	.bmh {left:120px; top:-147px;font-family: "나눔손글씨 또박또박"; font-size: 3.8em; font-weight: 1000;letter-spacing: 4px;}
-	.bmt1 {width: 410px; left:55px; top:55px; font-family: "나눔손글씨 또박또박"; font-size:2em;color:navy;}
-	.bmt2 {width: 400px; left:600px; top:50px; font-family: "나눔손글씨 또박또박"; font-size:2em;}
+	.bmh {left:120px; top:-147px; font-size: 3.8em; font-weight: 1000;letter-spacing: 4px;}
+	.bmt1 {width: 410px; left:55px; top:55px;  font-size:2em;}
+	.bmt2 {width: 400px; left:600px; top:50px; font-size:2em;}
 
-	.ymh {left:120px; top:-147px;font-family: "나눔손글씨 또박또박"; font-size: 3.8em; font-weight: 1000;letter-spacing: 4px;}
-	.ymt1 {width: 410px; left:55px; top:55px; font-family: "나눔손글씨 또박또박"; font-size:2em;}
-	.ymt2 {width: 400px; left:600px; top:50px; font-family: "나눔손글씨 또박또박"; font-size:2em;margin-bottom: 200px;}
+	.ymh {left:120px; top:-147px; font-size: 3.8em; font-weight: 1000;letter-spacing: 4px;}
+	.ymt1 {width: 410px; left:55px; top:55px; font-size:2em;}
+	.ymt2 {width: 400px; left:600px; top:50px; font-size:2em;margin-bottom: 200px;}
 
 	#margin {line-height: 5em;}
 	#onfoot {margin: 0; width:1000px;}
-	footer {margin: 100px,0,0,0; display: block; position: static; height: 200px;background-color: rgb(55,55,55);padding: 10px 40px 40px 90px;}
+	footer {margin: 100px,0,0,0; display: block; position: static; height: 200px; font-size:2em; background-color: rgb(55,55,55);padding: 10px 40px 40px 90px;color:  lightgray; line-height: 0.5em; }
+
+
 </style>
 
 </head>
 
-<body>
+<body class="cursor_test">
 
 <header>
 
@@ -56,9 +74,9 @@
 
 <section>
 <div class="absolute">
-	<a id="navi3"><img src="img3.png" onmouseover="this.src='img8.png'" onmouseout="this.src='img3.png'"></a>
-	<a id="navi2" href=""><img src="img4.png" onmouseover="this.src='img7.png'" onmouseout="this.src='img4.png'"></a>
-	<a id="navi1" href=""><img src="img5.png" onmouseover="this.src='img6.png'" onmouseout="this.src='img5.png'"></a>
+	<a id="navi3"><img class="naviimg3" src="img3.png" onmouseover="this.src='img8.png'" onmouseout="this.src='img3.png'"></a>
+	<a id="navi2" href=""><img class="naviimg2" src="img4.png" onmouseover="this.src='img7.png'" onmouseout="this.src='img4.png'"></a>
+	<a id="navi1" href=""><img class="naviimg1" src="img5.png" onmouseover="this.src='img6.png'" onmouseout="this.src='img5.png'"></a>
 </div>
 </section>
 
@@ -101,16 +119,18 @@
 </section>
 <border style="width: 500px; height: 500px;"></border>
 
-
+<a style="display:scroll;position:fixed;bottom:25px;right:25px; width: 2;" href="#" title="맨위로"><img style="width: 80px;" src="img25.png"></a>
 
 
 <section>
 	<img id="onfoot" src="img19.png">
 	</section>
 
-<footer></footer>
+<footer><h2 class="footfoot">어린이 권리 보장 위원회</h2>
+					<p style="font-size: 0.85em">어린이 권리 알리기 프로젝트</p>
+				<p style="font-size: 0.85em">서울특별시 소파구 백로 <b>소파 방정환 기념관</b> / 대표이사 정유진</p>	
+				<p style="font-size: 0.85em">아동학대 신고 국번없이 112 / 모바일앱 아이지킴콜112</p></footer>
 	
-</footer>
 </body>
 
 </html>
